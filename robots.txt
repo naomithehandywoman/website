@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://naomithehandywoman.co.uk/sitemap.xml
