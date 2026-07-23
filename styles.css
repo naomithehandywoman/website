@@ -4,17 +4,32 @@
 ========================================= */
 
 :root{
-    --background:#f7f7f5;
-    --surface:#ffffff;
-    --text:#222222;
+
+    --background:#F8F3EF;
+    --surface:#FFFFFF;
+
+    --text:#202020;
     --muted:#666666;
-    --border:#e6e6e6;
-    --accent:#2d6a4f;
-    --accent-dark:#1f4c38;
+
+    --border:#E8E3DF;
+
+    --accent:#397C80;
+    --accent-dark:#2F676A;
+
+    --primary:#397C80;
+    --primary-light:#99C1C0;
+
+    --secondary:#9471C2;
+    --secondary-light:#CDB4DB;
+
     --radius:18px;
-    --shadow:0 12px 35px rgba(0,0,0,.08);
+
+    --shadow:0 12px 35px rgba(32,32,32,.08);
+
     --transition:.3s ease;
+
     --max-width:1200px;
+
 }
 
 /* RESET */
@@ -803,4 +818,13 @@ h2{
 
     background:#999;
 
+}
+/* Alternate section backgrounds */
+
+.section-alt{
+    background:#F1F8F8;
+}
+
+.section-alt-purple{
+    background:#F7F2FB;
 }
