@@ -241,7 +241,6 @@ header{
 }
 
 .hero-image::before{
-    content:"YOUR PHOTO HERE";
     position:absolute;
     inset:0;
     display:flex;
