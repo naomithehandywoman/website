@@ -227,14 +227,17 @@ header{
     box-shadow:var(--shadow);
 }
 
-.hero-image{
-    min-height:650px;
-    border-radius:32px;
-    background:
-        linear-gradient(145deg,#ececec,#d8d8d8);
-    box-shadow:var(--shadow);
-    position:relative;
-    overflow:hidden;
+   .hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hero-image-logo{
+    width:100%;
+    max-width:520px;
+    height:auto;
+    object-fit:contain;
+    display:block;
 }
 
 .hero-image::before{
