@@ -112,12 +112,13 @@ header{
 }
 
 .navbar{
-    max-width:var(--max-width);
-    margin:auto;
+    max-width:1200px;
+    margin:0 auto;
+    padding:18px 30px;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 30px;
 }
 
 .logo{
@@ -659,30 +660,12 @@ section{
 }
 
 .nav-links{
-
-    position:fixed;
-
-    top:74px;
-
-    right:-100%;
-
-    width:280px;
-
-    height:calc(100vh - 74px);
-
-    background:white;
-
-    flex-direction:column;
-
-    align-items:flex-start;
-
-    padding:40px;
-
-    gap:28px;
-
-    transition:.35s ease;
-
-    box-shadow:-10px 0 40px rgba(0,0,0,.08);
+.nav-links a{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
 
 }
 
