@@ -120,49 +120,33 @@ header{
     justify-content:space-between;
     align-items:center;
 }
-/* ---------- LOGO ---------- */
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:14px;
-}
 
-.logo img{
-    height:55px;
-    width:auto;
-    display:block;
-}
-
-/* ---------- NAV LINKS ---------- */
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:36px;
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-
-.nav-links li{
-    list-style:none;
-}
-
-.nav-links a{
-    position:relative;
     color:#202020;
-    font-weight:700;
+
     text-decoration:none;
 
-    /* White outline to match your logo */
+    font-weight:700;
+
     text-shadow:
         -1px -1px 0 #fff,
          1px -1px 0 #fff,
         -1px  1px 0 #fff,
          1px  1px 0 #fff;
 
-    transition:.3s;
+}
+}
+
+.nav-links{
+    display:flex;
+    gap:36px;
+    list-style:none;
+}
+
+.nav-links a{
+    position:relative;
+    transition:var(--transition);
 }
 
 .nav-links a::after{
@@ -172,37 +156,88 @@ header{
     bottom:-6px;
     width:0;
     height:2px;
-    background:#09C1C0;
-    transition:.3s;
+    background:var(--accent);
+    transition:var(--transition);
 }
 
 .nav-links a:hover{
-    color:#202020;
+    color:var(--accent);
 }
 
 .nav-links a:hover::after{
     width:100%;
 }
 
-/* ---------- HERO LOGO ---------- */
+.hamburger{
+    display:none;
+    border:none;
+    background:none;
+    font-size:2rem;
+    cursor:pointer;
+}
 
-.hero-image{
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    align-items:center;
+    gap:70px;
+    padding-top:130px;
+}
+
+.hero p{
+    max-width:580px;
+    margin:30px 0 45px;
+    font-size:1.25rem;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.button{
+    display:inline-block;
+    padding:16px 34px;
+    border-radius:999px;
+    transition:var(--transition);
+    font-weight:600;
+}
+
+.primary{
+    background:var(--accent);
+    color:white;
+}
+
+.primary:hover{
+    background:var(--accent-dark);
+    transform:translateY(-3px);
+}
+
+.secondary{
+    border:1px solid var(--border);
+    background:white;
+}
+
+.secondary:hover{
+    transform:translateY(-3px);
+    box-shadow:var(--shadow);
+}
+
+   .hero-image{
     display:flex;
     justify-content:center;
     align-items:center;
 }
-
 .hero-image-logo{
     width:100%;
     max-width:520px;
     height:auto;
     object-fit:contain;
     display:block;
-}
-
-
-
-
 }
 
 .hero-image::before{
