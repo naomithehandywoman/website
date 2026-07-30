@@ -147,15 +147,13 @@ header{
 
 .nav-links a{
     position:relative;
-    color:#202020;
+    color:#ffffff;
     font-weight:700;
     text-decoration:none;
     font-size:1.2rem;
     text-transform:uppercase;
     letter-spacing:0.1em;
     
-    /* Smooth solid white stroke instead of jagged shadow */
-    -webkit-text-stroke: 0.3px #fff;
 
     transition:.3s;
 }
