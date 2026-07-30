@@ -17,7 +17,7 @@
     --accent-dark:#2F676A;
 
     --primary:#397C80;
-    --primary-light:#99C1C0;
+    --primary-light:#09C1C0;
 
     --secondary:#9471C2;
     --secondary-light:#CDB4DB;
@@ -838,4 +838,15 @@ h2{
 
 .section-alt-purple{
     background:#F7F2FB;
+}
+
+
+.logo img{
+
+    height:55px;
+
+    width:auto;
+
+    display:block;
+
 }
