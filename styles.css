@@ -158,12 +158,16 @@ header{
     text-transform:uppercase;
     letter-spacing:0.1em;
 
-    /* White outline to match your logo */
+    /* Slightly thicker white outline */
     text-shadow:
-        -1px -1px 0 #fff,
-         1px -1px 0 #fff,
-        -1px  1px 0 #fff,
-         1px  1px 0 #fff;
+        -1.5px -1.5px 0 #fff,
+         1.5px -1.5px 0 #fff,
+        -1.5px  1.5px 0 #fff,
+         1.5px  1.5px 0 #fff,
+        -1.5px  0px 0 #fff,
+         1.5px  0px 0 #fff,
+         0px -1.5px 0 #fff,
+         0px  1.5px 0 #fff;
 
     transition:.3s;
 }
@@ -204,8 +208,8 @@ header{
     align-items:center;
     gap:70px;
     padding-top:130px;
-    max-width:var(--max-width);
-    margin:0 auto;
+    padding-left:8%;
+    padding-right:8%;
 }
 
 .hero p{
