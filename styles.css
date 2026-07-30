@@ -136,17 +136,33 @@ header{
          1px  1px 0 #fff;
 
 }
-}
-
 .nav-links{
     display:flex;
+    align-items:center;
     gap:36px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.nav-links li{
     list-style:none;
 }
 
 .nav-links a{
     position:relative;
-    transition:var(--transition);
+    color:#202020;
+    font-weight:700;
+    text-decoration:none;
+
+    /* White outline to match your logo */
+    text-shadow:
+        -1px -1px 0 #fff,
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
+
+    transition:.3s;
 }
 
 .nav-links a::after{
@@ -156,12 +172,12 @@ header{
     bottom:-6px;
     width:0;
     height:2px;
-    background:var(--accent);
-    transition:var(--transition);
+    background:#09C1C0;
+    transition:.3s;
 }
 
 .nav-links a:hover{
-    color:var(--accent);
+    color:#202020;
 }
 
 .nav-links a:hover::after{
