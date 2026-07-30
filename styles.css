@@ -155,7 +155,7 @@ header{
     letter-spacing:0.1em;
     
     /* Smooth solid white stroke instead of jagged shadow */
-    -webkit-text-stroke: 1.5px #fff;
+    -webkit-text-stroke: 1px #fff;
 
     transition:.3s;
 }
