@@ -129,11 +129,7 @@ header{
 
     font-weight:700;
 
-    text-shadow:
-        -1px -1px 0 #fff,
-         1px -1px 0 #fff,
-        -1px  1px 0 #fff,
-         1px  1px 0 #fff;
+    -webkit-text-stroke: 1.5px #fff;
 
 }
 .nav-links{
@@ -157,17 +153,9 @@ header{
     font-size:1.2rem;
     text-transform:uppercase;
     letter-spacing:0.1em;
-
-    /* Slightly thicker white outline */
-    text-shadow:
-        -1.5px -1.5px 0 #fff,
-         1.5px -1.5px 0 #fff,
-        -1.5px  1.5px 0 #fff,
-         1.5px  1.5px 0 #fff,
-        -1.5px  0px 0 #fff,
-         1.5px  0px 0 #fff,
-         0px -1.5px 0 #fff,
-         0px  1.5px 0 #fff;
+    
+    /* Smooth solid white stroke instead of jagged shadow */
+    -webkit-text-stroke: 1.5px #fff;
 
     transition:.3s;
 }
@@ -208,8 +196,10 @@ header{
     align-items:center;
     gap:70px;
     padding-top:130px;
-    padding-left:8%;
-    padding-right:8%;
+    
+    /* Dynamically match the 1200px max-width and 8% padding of the lower sections */
+    padding-left: max(8%, calc((100% - var(--max-width)) / 2));
+    padding-right: max(8%, calc((100% - var(--max-width)) / 2));
 }
 
 .hero p{
